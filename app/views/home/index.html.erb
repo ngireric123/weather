@@ -1,1 +1,13 @@
-<p>Hello world</p>
+ <div class="w-full text-center mx-auto">
+    <p><%= Date.today.strftime("%A, %B, %d") %></p>
+   
+    <img src="http://openweathermap.org/img/wn/<%= @data["weather"].first["icon"] %>@2x.png" />
+    <p><%= @data["weather"].first["main"] %></p>
+    <p>Description: <%= @data["weather"].first["description"] %></p>
+    <p>Location : <%= @data["name"] %> </p>
+ </div>
+ 
+ 
+ 
+ 
+ 
